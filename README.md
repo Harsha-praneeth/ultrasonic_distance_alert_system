@@ -1,6 +1,6 @@
 # ultrasensor_distance_alert_system
 
-# 🛰️ Arduino OLED Ultrasonic Radar System
+#  Arduino OLED Ultrasonic Radar System
 
 An interactive distance-monitoring radar system built with an **Arduino Uno**, an **HC-SR04 ultrasonic distance sensor**, a **0.96" SSD1306 OLED display**, and an **active piezo buzzer**. 
 
@@ -8,18 +8,18 @@ This system acts like an automotive reverse parking sensor—displaying real-tim
 
 ---
 
-## ⚡ Features
+## Features
 
 - **Real-Time Distance Telemetry:** Measures object proximity with millimetre-level accuracy using ultrasonic sound waves.
 - **Dynamic Graphical OLED UI:** Displays live distance values (in cm), operational status, and a real-time progress bar.
 - **Adaptive 3-Stage Alert Logic:**
-  - **🟢 Safe Zone (> 30 cm):** Standard dark-mode telemetry readout, silent buzzer.
-  - **🔵 Warning Zone (10 cm – 30 cm):** Dynamic pulsed acoustic beeping that speeds up as objects get closer.
-  - **🔴 Critical Danger Zone (< 10 cm):** Solid continuous alarm tone paired with **High-Contrast Screen Inversion** (black text on bright white background) for maximum visual collision warning.
+  - ** Safe Zone (> 30 cm):** Standard dark-mode telemetry readout, silent buzzer.
+  - ** Warning Zone (10 cm – 30 cm):** Dynamic pulsed acoustic beeping that speeds up as objects get closer.
+  - ** Critical Danger Zone (< 10 cm):** Solid continuous alarm tone paired with **High-Contrast Screen Inversion** (black text on bright white background) for maximum visual collision warning.
 
 ---
 
-## 🛠️ Hardware Components
+##  Hardware Components
 
 | Component | Quantity | Description |
 | :--- | :---: | :--- |
@@ -31,7 +31,7 @@ This system acts like an automotive reverse parking sensor—displaying real-tim
 
 ---
 
-## 🔌 Circuit Pinout & Wiring
+##  Circuit Pinout & Wiring
 
 ### 1. HC-SR04 Ultrasonic Sensor
 - **VCC** $\rightarrow$ Arduino **5V**
@@ -51,7 +51,7 @@ This system acts like an automotive reverse parking sensor—displaying real-tim
 
 ---
 
-## 📐 How Distance Is Calculated
+##  How Distance Is Calculated
 
 The HC-SR04 emits a short **10-microsecond trigger pulse** to transmit a **40 kHz ultrasonic burst**. By measuring the return echo time ($\Delta t$), distance is computed using the speed of sound ($0.0343\text{ cm/}\mu\text{s}$):
 
@@ -61,7 +61,7 @@ $$\text{Distance (cm)} = \frac{\text{Echo Time } (\mu\text{s}) \times 0.0343}{2}
 
 ---
 
-## 📦 Required Arduino Libraries
+##  Required Arduino Libraries
 
 Before uploading the code, install the following libraries via the **Arduino IDE Library Manager** (`Ctrl + Shift + I` or `Cmd + Shift + I`):
 
@@ -71,7 +71,7 @@ Before uploading the code, install the following libraries via the **Arduino IDE
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 1. Wire up your components according to the pinout above.
 2. Open `arduino_oled_radar.ino` in your **Arduino IDE**.
@@ -81,7 +81,7 @@ Before uploading the code, install the following libraries via the **Arduino IDE
 
 ---
 
-## 👤 Author
+##  Author
 
 - **Harsha Praneeth**
 - **GitHub:** [@HarshaPraneeth](https://github.com/Harsha-praneeth)
